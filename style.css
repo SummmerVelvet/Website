@@ -1,5 +1,5 @@
 :root {
-    --color1: #A161E5; 
+    --color1: #e595d8; 
     --color2: #50E6E4;
     --color3: #639190;
     --color4: #6E4E66;
@@ -25,6 +25,7 @@ body, html {
     overflow: hidden;
     position: absolute;
     top: 0;
+
 }
 
 .side .Title {
@@ -33,12 +34,14 @@ body, html {
     font-size: 7vw;
     margin: 0px 15vw;
     width: 70vw;
+    user-select: none;
 }
 
 .side .fancy {
     font-family: "Playwrite NZ", cursive;
     font-size: 0.9em;
     line-height: 0.8em;
+    user-select: none;
 }
 
 #left-side .Title {
@@ -96,7 +99,7 @@ body, html {
 }
 
 .btn-8 {
-    position: relative;
+    position: sticky;
     top: 20px; right: center;
     background-color: #8367d6;
     line-height: 42px;
