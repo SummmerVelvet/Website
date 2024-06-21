@@ -3,8 +3,10 @@
     --color2: #50E6E4;
     --color3: #639190;
     --color4: #6E4E66;
+    --button-bg: #a659e4;  
+    --button-hover-bg: #9d82ff;  
+    --button-text: #FFFFFF;  
 }
-
 
 body, html {
     margin: 0;
@@ -28,14 +30,14 @@ body, html {
 .side .Title {
     color: rgb(0, 0, 0);
     font-family: "Rubik", sans-serif;
-    font-size: 8vw;
+    font-size: 7vw;
     margin: 0px 15vw;
     width: 70vw;
 }
 
 .side .fancy {
     font-family: "Playwrite NZ", cursive;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 0.8em;
 }
 
@@ -66,3 +68,101 @@ body, html {
     z-index: 1;
     right: 0;
 }
+
+
+
+.frame {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: var(--button-text);
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: var(--button-bg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: none; 
+}
+
+.btn-8 {
+    position: relative;
+    top: 20px; right: center;
+    background-color: #8367d6;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-8:before,
+  .btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #c797eb;
+
+    transition: all 0.3s ease;
+  }
+  .btn-8:before{
+     height: 0%;
+     width: 2px;
+  }
+  .btn-8:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-8:hover:before {
+    height: 100%;
+  }
+  .btn-8:hover:after {
+    width: 100%;
+  }
+  .btn-8:hover{
+    background: whitesmoke;
+  }
+  .btn-8 span:hover{
+    color: #c797eb;
+  }
+  .btn-8 span:before,
+  .btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #c797eb;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition: all 0.3s ease;
+  }
+  .btn-8 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-8 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .btn-8 span:hover:before {
+    height: 100%;
+  }
+  .btn-8 span:hover:after {
+    width: 100%;
+  }
