@@ -34,21 +34,21 @@ body, html {
     font-size: 7vw;
     margin: 0px 15vw;
     width: 70vw;
-    user-select: none;
 }
 
 .side .fancy {
     font-family: "Playwrite NZ", cursive;
     font-size: 0.9em;
     line-height: 0.8em;
-    user-select: none;
 }
 
 #left-side {
   user-select: none;
+  -webkit-user-select: none;
 }
 #right-side {
   user-select: none;
+  -webkit-user-select: none;
 }
 
 #left-side .Title {
