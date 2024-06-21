@@ -1,0 +1,50 @@
+.side{
+    height:100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.side .Title{
+    color:white;
+    font-family: "Rubik", sans-sarif;
+    font-size: 8vw;
+    margin: 0px 15vw;
+    width: 70vw;
+}
+
+.side .fancy{
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+
+#left-side .tile{
+    color: white;
+}
+
+#left-side .fancy{
+    color: var(--yellow);
+}
+
+#right-side .title{
+    color: var(--dark);
+}
+
+#right-side .fancy{
+    color: white ;
+}
+
+#left-side{
+    background-color: var(--purple);
+    z-index: 2;
+}
+
+#right-side{
+    background-color: var(--yellow);
+    z-index: 2;
+}
