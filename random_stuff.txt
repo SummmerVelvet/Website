@@ -35,3 +35,24 @@
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="smt.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div id="left-side" class="side">
+    <h2 class="Title">
+        My name is Summer
+        <span class="fancy">Summer</span>
+    </h2>
+</div>
+<div id="right-side" class="side">
+    <h2 class="Title">
+        My name is Yogya
+        <span class="fancy">Yogya</span>
+    </h2>
+</div>
+
+</html>

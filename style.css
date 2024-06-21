@@ -1,5 +1,20 @@
-.side{
-    height:100vh;
+:root {
+    --color1: #A161E5; 
+    --color2: #50E6E4;
+    --color3: #639190;
+    --color4: #6E4E66;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.side {
+    height: 100vh;
     width: 100%;
 
     display: grid;
@@ -7,44 +22,47 @@
 
     overflow: hidden;
     position: absolute;
+    top: 0;
 }
 
-.side .Title{
-    color:white;
-    font-family: "Rubik", sans-sarif;
+.side .Title {
+    color: rgb(0, 0, 0);
+    font-family: "Rubik", sans-serif;
     font-size: 8vw;
     margin: 0px 15vw;
     width: 70vw;
 }
 
-.side .fancy{
-    font-family: "Lobster", cursive;
-    font-size: 1.3em;
+.side .fancy {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 1em;
     line-height: 0.8em;
 }
 
-#left-side .tile{
+#left-side .Title {
     color: white;
 }
 
-#left-side .fancy{
-    color: var(--yellow);
+#left-side .fancy {
+    color: var(--color2);
 }
 
-#right-side .title{
-    color: var(--dark);
+#right-side .Title {
+    color: black;
 }
 
-#right-side .fancy{
-    color: white ;
+#right-side .fancy {
+    color: var(--color1);
 }
 
-#left-side{
-    background-color: var(--purple);
+#left-side {
+    background-color: var(--color4);
     z-index: 2;
+    left: 0;
 }
 
-#right-side{
-    background-color: var(--yellow);
-    z-index: 2;
+#right-side {
+    background-color: var(--color3);
+    z-index: 1;
+    right: 0;
 }
