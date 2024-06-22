@@ -1,9 +1,8 @@
-const left = document.getElementById("left-side");
+const menu = document.getElementById("menu");
 
-const handleOnMove = e => {
-    const p = e.clientX / window.innerWidth * 100;
-    left.style.width = `${p}%`;
-}
-
-document.onmousemove = e => handleOnMove(e);
-document.ontouchmove = e => handleOnMove(e.touches[0]);
+Array.from(document.getElementsByClassName("menu-item"))
+  .forEach((item, index) => {
+    item.onmouseover = () => {
+      menu.dataset.activeIndex = index;
+    }
+  });
